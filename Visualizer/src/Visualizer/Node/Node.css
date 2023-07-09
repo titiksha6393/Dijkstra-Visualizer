@@ -1,0 +1,56 @@
+.node {
+    width: 25px;
+    height: 25px;
+    outline: 1px solid rgb(63, 138, 138);
+    display: inline-block;
+}
+
+.node-finish {
+    border-radius: 40%;
+    background-color: green;
+}
+
+.node-start {
+    border-radius: 40%;
+    background-color: red;
+}
+
+.node-visited {
+    animation-name: example;
+    animation-duration: 5s;
+    background-color: rgb(138, 43, 226);
+}
+
+.node-wall {
+    background-color: brown;
+}
+
+.node-shortest-path {
+    /* border-radius: 40%; */
+    background-color: yellowgreen;
+}
+
+@keyframes example {
+    0% {
+        transform: scale(0.3);
+        background-color: rgb(226, 43, 147);
+        /* border-radius: 100%; */
+    }
+
+    25% {
+        transform: scale(0.5);
+        background-color: rgb(185, 17, 174);
+        border-radius: 50%;
+    }
+
+    50% {
+        transform: scale(0.7);
+        background-color: rgb(144, 6, 175);
+        border-radius: 25%;
+    }
+
+    100% {
+        transform: scale(1);
+        background-color: rgb(138, 43, 226);
+    }
+}
